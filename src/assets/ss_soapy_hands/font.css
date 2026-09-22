@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'SS Soapy Hands';
+	src: url('SS_Soapy_Hands-BoldItalic.woff2') format('woff2'),
+		url('SS_Soapy_Hands-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SS Soapy Hands';
+	src: url('SS_Soapy_Hands-Bold.woff2') format('woff2'),
+		url('SS_Soapy_Hands-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SS Soapy Hands';
+	src: url('SS_Soapy_Hands-Italic.woff2') format('woff2'),
+		url('SS_Soapy_Hands-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SS Soapy Hands';
+	src: url('SS_Soapy_Hands-MediumItalic.woff2') format('woff2'),
+		url('SS_Soapy_Hands-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SS Soapy Hands';
+	src: url('SS_Soapy_Hands-Medium.woff2') format('woff2'),
+		url('SS_Soapy_Hands-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SS Soapy Hands';
+	src: url('SS_Soapy_Hands.woff2') format('woff2'),
+		url('SS_Soapy_Hands.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
