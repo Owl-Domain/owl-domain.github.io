@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'SS Soapy Hands';
+    src: url('SS_Soapy_Hands.woff2') format('woff2'),
+        url('SS_Soapy_Hands.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

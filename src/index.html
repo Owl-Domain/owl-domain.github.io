@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!-- In-line some basic CSS to stop the user from getting flash-banged on slow connections -->
+		<style>
+			html {
+				background: radial-gradient(ellipse at top, #171717, transparent), #16161d;
+				color: #eeeeee;
+				height: 100vh;
+			}
+
+			body {
+				height: 100%;
+				margin: 0;
+			}
+
+			main{
+				display: flex;
+				justify-content: center;
+				margin: 0;
+				height: 100%;
+				align-items: center;
+			}
+
+			#island {
+				filter: drop-shadow(0 0 5px black);
+			}
+
+			#more-to-come {
+				font-family: 'SS Soapy Hands';
+				font-size: 4em;
+				text-align: center;
+				margin: 0;
+			}
+
+			@keyframes slideFromAbove {
+				0% {
+					transform: translateY(-100%);
+				}
+				60% {
+					transform: translateY(-100%);
+				}
+				100% {
+					transform: translateY(0);
+				}
+			}
+
+			#banner {
+				position: absolute;
+				width: 100%;
+				height: 4em;
+				background: repeating-linear-gradient(45deg,
+					#ffff3e,
+					#ffff3e 15px,
+					#2a2a2a 15px,
+					#2a2a2a 30px);
+
+				animation: 2s 0s 1 slideFromAbove;
+			}
+		</style>
+
+		<!-- Styles -->
+		<link href="assets/soapy_hands/font.css" rel="stylesheet">
+
+		<!-- General meta -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#16161d">
+		<meta property="og:type" content="website">
+
+		<!-- Page title -->
+		<title>OwlDomain</title>
+		<meta property="og:title" content="OwlDomain">
+		<meta name="twitter:title" content="OwlDomain">
+		<meta itemprop="name" content="OwlDomain">
+		<meta name="apple-mobile-web-app-title" content="OwlDomain">
+
+		<!-- Page description -->
+		<meta name="description" content="More to come...">
+		<meta property="og:description" content="More to come...">
+		<meta name="twitter:description" content="More to come...">
+		<meta itemprop="description" content="More to come...">
+		<meta name="description" itemprop="description" content="More to come...">
+
+		<!-- Icons -->
+		<link rel="icon" sizes="256x256" href="assets/icon.png">
+		<link rel="apple-touch-icon" href="assets/icon.png">
+		<link rel="mask-icon" href="assets/icon.png" color="#171717">
+		<meta name="og:image" content="https://owldomain.org/assets/icon.png">
+	</head>
+	<body>
+		<div id="banner">
+
+		</div>
+		<main>
+			<div id="island">
+				<img src="assets/logo-name.svg"/>
+				<p id="more-to-come">more to come...</p>
+			</div>
+		</main>
+	</body>
+</html>
