@@ -1,0 +1,32 @@
+name: deploy
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+    paths:
+      - src/**
+      - .github/workflows/deploy.yaml
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository.
+        uses: actions/checkout@v7
+        with:
+          sparse-checkout: src/
+
+      - name: Upload site files as an artifact.
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: src
+
+      - name: Deploy the website.
+        uses: actions/deploy-pages@v5
